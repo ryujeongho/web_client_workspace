@@ -10,7 +10,6 @@
         <fieldset>
             <legend>납품자 정보</legend>
             <ol>
-
                 <li>
                     <label for="name">납품자명(필수) : </label>
                     <input 
@@ -50,6 +49,40 @@
                         <option value="광주">광주</option>
                     </select>
                 </li>
+
+                <label for="name"><li>납품자명(필수) : </label>
+                <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required>
+                <br><br>
+            </li>
+                <label for="email"><li> email(필수) : </label>
+                <input 
+                type="text" 
+                name="email" 
+                id="email"
+                placeholder="answer@naver.com"
+                required>
+                <br><br>
+            </li>
+                <label for="email"><li> 홈페이지 : </label>
+                <input 
+                type="text" 
+                name="email" 
+                id="email"
+                value="http://">
+                <br><br>
+            </li>
+                <label for="local"><li> 지역 : </label>
+                <select name="local" id="local">
+                    <option value="부산" selected>부산</option>
+                    <option value="서울">서울</option>
+                    <option value="광주">광주</option>
+                </select>
+            </li>
+
             </ol>
         </fieldset>
 
@@ -95,6 +128,39 @@
                     <textarea name="etc" id="etc"></textarea>
 
                 </li>
+                <label for="product"><li>상품명(필수) : </label>
+                <input 
+                type="text" 
+                name="product" 
+                id="product"
+                required>
+                <br><br>
+            </li>
+                <label for="cnt"><li>납품수량(필수) : </label>
+                <input 
+                type="text" 
+                name="cnt" 
+                id="cnt"
+                placeholder="최소 100"
+                min="100"
+                required>
+                <br><br>
+            </li>
+                <label for="grade"><li>납품등급(필수) : </label>
+                <input 
+                type="range"
+                name="grade" 
+                id="grade"
+                min="0"
+                max="100"
+                required>
+                <br><br>
+            </li>
+
+                <label for="etc"><li>기타사항 : </label>
+                <textarea name="etc" id="etc"></textarea>
+
+            </li>
             </ul>
         </fieldset>
         <br>
