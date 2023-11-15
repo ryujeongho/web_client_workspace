@@ -1,0 +1,33 @@
+#img-wrapper {
+    background-color: lightgray;
+    padding: 5%;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1 {
+    width: 230px;
+    height: 150px;
+    margin: 5px;
+}
+.img2 {
+    width: 230px;
+    height: 150px;
+    margin: 5px;
+}
+.img3 {
+    width: 230px;
+    height: 150px;
+    margin: 5px;
+}
+.img1:hover {
+    box-shadow: 5px 2px 5px 3px gray;
+}
+.img2:hover {
+    box-shadow: 5px 2px 5px 3px gray;
+}
+.img3:hover {
+    box-shadow: 5px 2px 5px 3px gray;
+}
