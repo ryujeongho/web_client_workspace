@@ -1,0 +1,18 @@
+.block {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.color1 { background-color: blue; }
+.color2 { background-color: gold; }
+.color3 { background-color: red; }
+.color4 { background-color: greenyellow; }
+.color5 { background-color: cadetblue; }
+
+.d-inline { display: inline; }
+.d-block { display: block;}
+.d-inline-block {display: inline-block;}
+
+.d-none { display: none; }
+.v-hidden { visibility: hidden; }
+.opacity-0 { opacity: 0; }

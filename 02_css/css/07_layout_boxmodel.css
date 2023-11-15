@@ -1,0 +1,24 @@
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; */
+    /* padding: 10px 10px 10px 10px; */
+    /* top right bottom  left값은 맞은편 right값을 적용*/
+    /* padding: 10px 20px;  상하 10 좌우 20*/
+    padding: 10px;
+    margin: 5px;
+}
+
+.item > span{
+    width: 300px; /* inline 요소 적용안됨 */
+    height: 300px; /* inline 요소 적용안됨 */
+    padding: 10px;
+    margin: 50px 30px; /* inline 요소 위아래 적용안됨 */
+    border: 1px solid black;
+    background-color: aqua;
+}

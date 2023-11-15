@@ -1,0 +1,18 @@
+#title {
+    color: red !important; /* override 금지 */
+    text-decoration: underline;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    background-color: burlywood;
+}
+
+div.foo[title=box] {
+    background-color: pink !important;
+}
+.foo {
+    background-color: aquamarine;
+}
