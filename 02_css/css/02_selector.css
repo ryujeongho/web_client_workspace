@@ -20,8 +20,8 @@
 /* 속성 선택자 */
 /* [title] {
     cursor: pointer;
-}
-[title=안녕2] {
+} */
+/* [title=안녕2] {
     text-decoration: underline;
 } */
 /* 혼용 */
@@ -34,19 +34,19 @@
 } */
 
 /* 자식 선택자 */
-/* #parent > h4 {
+#parent > h4 {
     color: tomato;
-} */
+}
 /* 후손 선택자 */
-/* #parent h4 {
-    color: tomato;
+#parent h4 {
+    color: blue;
 }
 #parent > ul > li {
     color: blue;
 }
 #parent #child ul li{
     color: chartreuse;
-} */
+}
 
 /* 형제 선택자 */
 /* 다음 형제요소 하나 */
@@ -54,9 +54,9 @@
     color: darkorange;
 }
 /* 다음 형제요소 모두 - pre태그 제외 */
-/* #p1 ~ p {
+#p1 ~ p {
     text-decoration: underline;
-} */
+}
 /* 모든 요소 선택자 * - pre태그 포함 */
 #p1 ~ * {
     text-decoration: underline;
@@ -99,9 +99,9 @@
 /* #season-wrapper p:first-of-type {
     color: springgreen;
 } */
-#season-wrapper p:last-of-type {
+/* #season-wrapper p:last-of-type {
     color: springgreen;
-}
+} */
 
 /* 부정선택자 */
 /* not() 괄호 안에 있는 것 제외하고 모두 */

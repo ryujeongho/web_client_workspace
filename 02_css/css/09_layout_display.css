@@ -10,8 +10,8 @@
 .color5 { background-color: cadetblue; }
 
 .d-inline { display: inline; }
-.d-block { display: block;}
-.d-inline-block {display: inline-block;}
+.d-block { display: block; }
+.d-inline-block {display: inline-block; }
 
 .d-none { display: none; }
 .v-hidden { visibility: hidden; }

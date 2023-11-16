@@ -29,10 +29,12 @@
 			height: 800px;
 			border: 1px solid black;
             background-image: url("/sample/image/bgsample.PNG");
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            background-size: 1000px 1000px; 
+            background-size: cover;
+			 /* contain : x축 또는 y축이 꽉 찰때까지만 확대/축소. 요소를 채우지 못할 수 있음. */ 
+			 /* cover : 요소를 모두 채울 때까지 확대/축소. 이미지가 짤릴 수 있음 */ 
 		}
 		/* background-image */
     /* background-color */
