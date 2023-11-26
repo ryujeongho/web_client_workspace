@@ -38,15 +38,15 @@
     color: tomato;
 }
 /* 후손 선택자 */
-#parent h4 {
+/* #parent h4 {
     color: blue;
-}
-#parent > ul > li {
+} */
+/* #parent > ul > li {
     color: blue;
-}
-#parent #child ul li{
+} */
+/* #parent #child ul li{
     color: chartreuse;
-}
+} */
 
 /* 형제 선택자 */
 /* 다음 형제요소 하나 */

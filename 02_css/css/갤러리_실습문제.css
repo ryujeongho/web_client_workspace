@@ -1,22 +1,37 @@
 #gallery li{
     list-style: none;
+    margin: 0 10px 10px 0;
 }
-#gallery .small {
+#gallery ul {
+    position: relative;
+    flex-wrap: wrap;
     display: flex;
-    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+#gallery .small {
+    cursor: pointer;
 }
 
 #gallery {
-    position: relative;
     width: 500px;
     height: 300px;
     border: 10px solid black;
     background-color: rgb(45, 45, 45);
-    display: flex;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .pic {
+    border: 4px solid black;
+    position: absolute;
     display: none;
     z-index: 1;
+}
+
+#gallery .small:hover+.pic {
+    transform: translate(110px, -10px);
+    display: block;
 }

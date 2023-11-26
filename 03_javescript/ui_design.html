@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Design</title>
+    <style>
+        #title{
+            width: 300px;
+            margin: 2px 0;
+        }
+        #content{
+            width: 300px;
+            margin: 2px 0;
+            padding-bottom: 150px;
+            vertical-align: middle;
+        }
+        #uploadFile {
+            margin: 2px;
+        }
+        #submit {
+            margin: 15px 0 0 140px;
+        }
+        .label {
+            margin : 17px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .line {
+            border: 1px solid black
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: separate;
+            width: 100%;
+        }
+        td{
+            border: 1px solid black;
+            padding: 2px;
+        }
+        th {
+            border: 1px solid black;
+        }
+        .go {
+            width: 30px;
+            text-align: center;
+            padding: 0;
+        }
+        .ann-title {
+            width: 900px;
+        }
+        .no {
+            width: 32px;
+            padding: 0;
+        }
+        .userId, .day {
+            width: 150px;
+        }
+        .view {
+            width: 50px;
+            padding: 0;
+        }
+        thead, tfoot {
+            background-color: rgb(248, 164, 133);
+            color: white;
+        }
+        tbody {
+            background-color: rgb(255, 255, 216);
+        }
+        #num {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>포트폴리오 문제</h1>
+    <div class="line"></div>
+    <br>
+    <form action="insert.no" method="post">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <label for="title" class="label">제목</label>
+            <input type="text" name="title" id="title" placeholder="제목을 입력하시오." required>
+            <br>
+            <label for="content" class="label">내용</label>
+            <input type="text" name="content" id="content" placeholder="내용을 입력하시오." required>
+            <br>
+            <label for="uploadFile">첨부파일</label>
+            <input type="file" name="uploadFile" id="uploadFile">
+            <br>
+            <button id="submit">작성하기</button>
+        </fieldset>
+        <br>
+        <div class="line"></div>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th class="no" id="num">번호</th>
+                    <th colspan="2">제목</th>
+                    <th class="userId">작성자</th>
+                    <th class="day">작성일</th>
+                    <th class="view">조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="width: 20px;">
+                    <td class="no">9</td>
+                    <td class="ann-title">공지사항 제목 9</td>
+                    <td class="go"><button style="width: 80px; margin: 0;">바로가기</button></td>
+                    <td>user01</td>
+                    <td>2021-03-29</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td class="no">6</td>
+                    <td class="ann-title">공지사항 제목 6</td>
+                    <td class="go"><button style="width: 80px;">바로가기</button></td>
+                    <td>answ445</td>
+                    <td>2021-03-12</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="no">3</td>
+                    <td class="ann-title">공지사항 제목 3</td>
+                    <td class="go"><button style="width: 80px;">바로가기</button></td>
+                    <td>testg12</td>
+                    <td>2021-03-01</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td class="no">2</td>
+                    <td class="ann-title">공지사항 제목 2</td>
+                    <td class="go"><button style="width: 80px;">바로가기</button></td>
+                    <td>palwe3</td>
+                    <td>2021-01-02</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td class="no">1</td>
+                    <td class="ann-title">공지사항 제목 1</td>
+                    <td class="go"><button style="width: 80px;">바로가기</button></td>
+                    <td>xml23</td>
+                    <td>2020-12-24</td>
+                    <td>124</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">전체공지사항 갯수</th>
+                    <th colspan="2">5개</th>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+div, section, header, aside, footer { padding: 10px; }
+div#container {
+    background-color: #f0f0f0;
+    width: 960px;
+    margin: 0 auto;
+}
+header { 
+    background-color:#908886; 
+    height:100px; 
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 420px;
+    margin-left: auto;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+nav ul li:not(:last-of-type)::after {
+    content: "|";
+}
+nav ul li a:hover {
+    color: white;
+}
+section {
+    background-color:#F5F5F5;
+    float: left;
+    width:280px; 
+    height:400px; 
+}
+aside { 
+    background-color:#DCDAD9;
+    float: right;
+    width:640px; 
+    height:400px; 
+}
+footer {
+    background-color: #555555;
+    clear: both;
+    text-align: center;
+    padding-top: 5px;
+}
