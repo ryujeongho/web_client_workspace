@@ -4,7 +4,7 @@
  */
 const test1 = (e) => {
     console.log('🍔', e);
-    // console.log(document.querySelector('#btn1').onclick);
+    console.log(document.querySelector('#btn1').onclick);
 };
 
 document.querySelector('#btn2').onclick = (e) => {

@@ -4,7 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Implement</title>
-    <link rel="stylesheet" href="ui_implement.css">
+    <style>
+        input {
+    border-width: 0 0 1px;
+    border-style: dashed;
+    margin: 10px;
+    background: transparent;
+}
+label {
+    font-weight: bold;
+}
+button {
+    position: fixed;
+    border: none;
+    display: inline-block;
+    padding: 25px 30px;
+    font-family: "paybooc-Light", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    width: 420px;
+    font-size: large;
+    top: 650px;
+    background-color: rgb(212, 234, 212);
+    color: green;
+}
+html { 
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(208, 220, 247);
+}
+body {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+}
+fieldset {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin-top: -250px;
+    margin-left: -250px;
+    left: 50%;
+    top: 50%;
+    width: 420px;
+    border-style: solid;
+    height: 550px;
+    padding-top: 50px;
+}
+#email1, #email2 {
+    width: 104px;
+    padding: 10px;
+}
+.email {
+    padding-right: 54px;
+}
+#password-check {
+    width: 280px;
+}
+.add {
+    width: 280px;
+    margin-left: 80px;
+}
+#password {
+    width: 278px;
+    margin-left: 49px;
+}
+#id {
+    width: 278px;
+    margin-left: 63px;
+}
+    </style>
 </head>
 <body>
         <fieldset>
@@ -33,6 +101,38 @@
             <button>가 입</button>
         </fieldset>
 
-    <script src="ui_implement.js"></script>
+        <script>
+            document.querySelector("#password").addEventListener('click', () => {
+    alert("영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자");
+});
+document.querySelector("#id").addEventListener('blur', (e) => {
+    const input = document.createElement("input");
+    const value = e.target.value;
+    input.style.border = '0 none';
+    input.placeholder = '필수 입력 항목 입니다';
+    if(!value){
+        document.querySelector("#target1").appendChild(input);
+    }
+
+}, {once : true});
+document.querySelector("#password").addEventListener('blur', (e) => {
+    const input = document.createElement("input");
+    const value = e.target.value;
+    input.style.border = '0 none';
+    input.placeholder = '필수 입력 항목 입니다'
+    if(!value){
+        document.querySelector("#target2").appendChild(input);
+    }
+}, {once : true});
+document.querySelector("#password-check").addEventListener('blur', (e) => {
+    const input = document.createElement("input");
+    const value = e.target.value;
+    input.style.border = '0 none';
+    input.placeholder = '필수 입력 항목 입니다'
+    if(!value){
+        document.querySelector("#target3").appendChild(input);
+    }
+}, {once : true});
+        </script>
 </body>
 </html>

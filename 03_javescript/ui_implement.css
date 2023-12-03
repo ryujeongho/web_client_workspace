@@ -17,7 +17,7 @@ button {
     font-weight: 600;
     width: 420px;
     font-size: large;
-    top: 600px;
+    top: 650px;
     background-color: rgb(212, 234, 212);
     color: green;
 }
@@ -41,6 +41,7 @@ fieldset {
     width: 420px;
     border-style: solid;
     height: 550px;
+    padding-top: 50px;
 }
 #email1, #email2 {
     width: 104px;

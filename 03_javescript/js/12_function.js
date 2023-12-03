@@ -240,5 +240,5 @@ const test9 = () => {
     result.innerHTML += writeButton('클릭');
 
 };
-
+// const tagMaker = (tagName) => {return (content) => console.log(`<${tagName}>${content}</${tagName}>`);}
 const tagMaker = (tagName) => (content) => `<${tagName}>${content}</${tagName}>`;
